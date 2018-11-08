@@ -1,0 +1,92 @@
+.PennController {
+    font-family: sans-serif;
+}
+
+.Html {
+  max-width: 80vw;
+}
+
+.Tooltip {
+    font-size: 14px;
+}
+
+.practicelabel {
+  color: blue;
+  font-size: small;
+  margin-top: -2em;
+  text-align: center;
+  display: inline-block;
+  font-style: italic;
+  width: 100%;
+}
+
+.keyleft, .keyright {
+  color: darkslategray;  
+  font-weight: bold;
+  padding: 5px;
+  border: solid 1px lightgray;
+  border-radius: 2px;
+  width: 1em;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 1px 1px 2px gray;
+}
+.keyleft {
+  margin-left: -2em;
+}
+.keyright {
+  margin-left: 2em;
+}
+
+.contextsentence, .testsentence {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.pressakey {
+    text-align: center !important;
+    font-style: italic !important;
+    background-color: transparent !important;
+    height: 1em !important;
+}
+
+.planets-container {
+    margin-top: 2em !important;
+}
+
+.target, .filler, .reveal {
+    border: solid 1px grey;
+}
+
+.target:hover, .filler:hover, .reveal:hover {
+    /*border: solid 2px purple !important;*/
+}
+
+.Tooltip {
+    padding: 5px !important;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.Button {
+    margin-top: 2em !important;
+    background: darkseagreen;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    border: none;  
+}
+.Button:hover {
+    box-shadow: 5px 5px 10px grey;  
+    cursor: pointer;
+    color: linen;
+}
+.Button:active {
+    box-shadow: 2px 2px 15px grey;
+    color: grey;
+}
+

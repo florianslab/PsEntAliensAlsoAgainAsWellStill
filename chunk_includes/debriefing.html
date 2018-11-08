@@ -1,0 +1,60 @@
+<h1>Debriefing</h1>
+
+<p>With this experiment, we're investigating various issues in how people understand expressions such as <span class='trigger'></span>. For example, you read sentences like the following:</p>
+
+<ol>
+  <li>Exactly two aliens <span class='predicate'></span></li>
+</ol>
+
+<p>(1) claims in particular that two aliens were red at destination. In parallel to this claim, <span class='trigger'></span> conveys the idea that there already were red aliens at home. Our research investigates how people use this parallel piece of information when evaluating the truth of the sentence above. In the critical trials, the picture with the visible aliens in fact contained three aliens matching the main claim (three aliens were red at destination) but one of these three aliens didn't match the parallel information (one of the three aforementioned aliens wasn't red at home to start with). We are interested in how likely you were to consider the parallel information to choose the picture with the visible aliens, as opposed to the picture with the hidden aliens, and how long it took you to make your choice.</p>
+
+<p>The results will help us understand to what extent speakers distinguish parallel information from regular claims and whether different expressions contribute parallel information differently.</p>
+
+<p>On a more general level, this study will inform current debates on the processing of different types of meaning in natural language and help us to design further experiments using fine-grained timing measures to understand the relative time course of these interpretations unfolding in online language processing.</p>
+
+<p>Please do not hesitate to ask any questions you like about the experiment. If you think of questions after leaving the lab, you can write to Jeremy Zehr at <a href="mailto:jeremy@lab.florianschwarz.net">jeremy@lab.florianschwarz.net</a>.</p>
+
+
+<script>
+  if (typeof(PennController)!="undefined"){
+    setTimeout(()=>{
+    let triggers = document.getElementsByClassName('trigger');
+    let predicates = document.getElementsByClassName('predicate');
+    switch(PennController.GetURLParameter("t")){
+      case "st":
+        for (let e in triggers)
+             if (triggers[e] instanceof Element)
+               triggers[e].innerHTML = "'Still'";
+        for (let e in predicates)
+             if (predicates[e] instanceof Element)
+               predicates[e].innerHTML = "were still red at destination";
+        break;
+      case "ag":
+        for (let e in triggers)
+             if (triggers[e] instanceof Element)
+               triggers[e].innerHTML = "'Again'";
+        for (let e in predicates)
+             if (predicates[e] instanceof Element)
+               predicates[e].innerHTML = "were red again at destination";
+        break;
+      case "al":
+        for (let e in triggers)
+             if (triggers[e] instanceof Element)
+               triggers[e].innerHTML = "'Also'";
+        for (let e in predicates)
+             if (predicates[e] instanceof Element)
+               predicates[e].innerHTML = "also were red at destination";
+        break;
+      case "aw":
+      default:
+        for (let e in triggers)
+             if (triggers[e] instanceof Element)
+               triggers[e].innerHTML = "'As well'";
+        for (let e in predicates)
+             if (predicates[e] instanceof Element)
+               predicates[e].innerHTML = "were red at destination as well";
+        break;
+    }
+    });
+  }
+</script>
